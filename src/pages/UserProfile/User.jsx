@@ -76,7 +76,7 @@ function User() {
     };
 
     const handleCopy = () => {
-        const link = `https://www.gofund.io.vn/user/${user.user_id}`;
+        const link = `https://gofund.io.vn/user/${user.user_id}`;
         navigator.clipboard
             .writeText(link)
             .then(() => {
@@ -291,7 +291,7 @@ function User() {
                                 <span className="text-[12px] text-[#6f6f6f]">Profile link</span>
                                 <input
                                     type="text"
-                                    value={`https://www.gofund.io.vn/user/${user.user_id}`}
+                                    value={`https://gofund.io.vn/user/${user.user_id}`}
                                     className="w-full border-0 focus:border-0 focus:outline-none focus:ring-0 resize-none cursor-no-drop"
                                     readOnly
                                 />

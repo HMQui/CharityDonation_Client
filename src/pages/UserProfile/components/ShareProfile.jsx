@@ -36,7 +36,7 @@ function ShareProfile({ open, onClose, data }) {
     if (!show) return null;
 
     const handleCopy = () => {
-        const link = `https://www.gofund.io.vn/user/${data.user_id}`;
+        const link = `https://gofund.io.vn/user/${data.user_id}`;
         navigator.clipboard
             .writeText(link)
             .then(() => {
@@ -96,7 +96,7 @@ function ShareProfile({ open, onClose, data }) {
                         <span className="text-[12px] text-[#6f6f6f]">Profile link</span>
                         <input
                             type="text"
-                            value={`https://www.gofund.io.vn/user/${data.user_id}`}
+                            value={`https://gofund.io.vn/user/${data.user_id}`}
                             className="w-full border-0 focus:border-0 focus:outline-none focus:ring-0 resize-none cursor-no-drop"
                             readOnly
                         />

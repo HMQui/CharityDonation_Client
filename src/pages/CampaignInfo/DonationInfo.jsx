@@ -30,7 +30,7 @@ function DonationInfo({ campaign }) {
     const handleCopy = async () => {
         try {
             await navigator.clipboard.writeText(
-                `https://www.gofund.io.vn/campaign/discover/${info.campaign_id}`
+                `https://gofund.io.vn/campaign/discover/${info.campaign_id}`
             );
             setCopied(true);
             setTimeout(() => setCopied(false), 2000);
@@ -131,7 +131,7 @@ function DonationInfo({ campaign }) {
                             <span className="text-[12px] text-[#6f6f6f]">Profile link</span>
                             <input
                                 type="text"
-                                value={`https://www.gofund.io.vn/campaign/discover/${info.campaign_id}`}
+                                value={`https://gofund.io.vn/campaign/discover/${info.campaign_id}`}
                                 className="w-full border-0 focus:border-0 focus:outline-none focus:ring-0 resize-none cursor-no-drop"
                                 readOnly
                             />

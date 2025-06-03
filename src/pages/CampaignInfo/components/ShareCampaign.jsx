@@ -30,7 +30,7 @@ function ShareCampaign({ open, onClose, data }) {
     if (!show) return null;
 
     const handleCopy = () => {
-        const link = `https://www.gofund.io.vn/campaign/discover/${data.campaignId}`;
+        const link = `https://gofund.io.vn/campaign/discover/${data.campaignId}`;
         navigator.clipboard
             .writeText(link)
             .then(() => {
@@ -90,7 +90,7 @@ function ShareCampaign({ open, onClose, data }) {
                         <span className="text-[12px] text-[#6f6f6f]">Profile link</span>
                         <input
                             type="text"
-                            value={`https://www.gofund.io.vn/campaign/discover/${data.campaignId}`}
+                            value={`https://gofund.io.vn/campaign/discover/${data.campaignId}`}
                             className="w-full border-0 focus:border-0 focus:outline-none focus:ring-0 resize-none cursor-no-drop"
                             readOnly
                         />

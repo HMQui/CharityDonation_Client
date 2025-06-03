@@ -22,8 +22,6 @@ function WithdrawRequest() {
 
         // eslint-disable-next-line no-unused-vars
         socket.on("new-withdraw-request", ({ campaignIdS, statusS }) => {
-            console.log("Called");
-
             fetchWithdrawRequest();
         });
         fetchWithdrawRequest();
