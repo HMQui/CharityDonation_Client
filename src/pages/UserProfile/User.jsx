@@ -9,7 +9,7 @@ import CloseIcon from "@mui/icons-material/Close";
 
 import bgShareProfile from "../../assets/images/bgShareProfile.jpg";
 import { updateAvatar, updateUser } from "../../services/api/userApi";
-import EditBioMobile from "./components/editBioMobile";
+import EditBioMobile from "./components/EditBioMobile";
 import ShareProfile from "./components/ShareProfile";
 import EditProfileMobile from "./components/EditProfileMobile";
 import EditProfilePc from "./components/EditProfilePc";
