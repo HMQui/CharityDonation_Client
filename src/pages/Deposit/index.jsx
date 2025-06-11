@@ -16,6 +16,7 @@ import MomoLogo from "../../assets/images/momo_icon_square_pinkbg_RGB.png";
 import USDTLogo from "../../assets/images/tether-usdt-logo.png";
 import PaymeLogo from "../../assets/images/Logo-PayME-V.webp";
 import PaypalLogo from "../../assets/images/paypal.png";
+import { Log } from "ethers";
 
 const PAYMENT_METHODS = [
     {
@@ -149,6 +150,8 @@ function Deposit() {
             if (res) {
                 localStorage.setItem("fiatDeposit", String(amountInput));
                 const approvalUrl = res.approvalUrl;
+                console.log(approvalUrl);
+                
                 window.location.href = approvalUrl;
             } else {
                 alert("Failed to create PayPal order");
